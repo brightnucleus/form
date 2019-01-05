@@ -1,0 +1,20 @@
+{
+  "name": "brightnucleus/form",
+  "description": "Config-based forms.",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alain Schlesser",
+      "email": "alain.schlesser@gmail.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "BrightNucleus\\Form\\": "src/"
+    }
+  }
+}
