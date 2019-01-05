@@ -1,24 +1,24 @@
 <?php declare( strict_types = 1 );
 /**
- * Bright Nucleus Admin Page.
+ * Bright Nucleus Form.
  *
- * Config-based WordPress admin pages using the Settings API.
+ * Config-based Forms.
  *
- * @package   BrightNucleus\AdminPage
+ * @package   BrightNucleus\Form
  * @author    Alain Schlesser <alain.schlesser@gmail.com>
  * @license   MIT
  * @link      https://www.brightnucleus.com/
- * @copyright 2017 Alain Schlesser, Bright Nucleus
+ * @copyright 2019 Alain Schlesser, Bright Nucleus
  */
 
-namespace BrightNucleus\AdminPage\Control;
+namespace BrightNucleus\Form\Control;
 
 /**
  * Interface Control.
  *
- * @since   0.1.2
+ * @since   0.1.0
  *
- * @package BrightNucleus\AdminPage\Control
+ * @package BrightNucleus\Form\Control
  * @author  Alain Schlesser <alain.schlesser@gmail.com>
  */
 interface Control {
@@ -31,7 +31,7 @@ interface Control {
 	/**
 	 * Render the HTML representation of the control.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @param string $template Template to render the control into. This gets
 	 *                         passed into `sprintf()` with the following

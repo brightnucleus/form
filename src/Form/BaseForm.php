@@ -1,22 +1,22 @@
 <?php declare( strict_types = 1 );
 /**
- * Bright Nucleus Admin Page.
+ * Bright Nucleus Form.
  *
- * Config-based WordPress admin pages using the Settings API.
+ * Config-based Forms.
  *
- * @package   BrightNucleus\AdminPage
+ * @package   BrightNucleus\Form
  * @author    Alain Schlesser <alain.schlesser@gmail.com>
  * @license   MIT
  * @link      https://www.brightnucleus.com/
- * @copyright 2017 Alain Schlesser, Bright Nucleus
+ * @copyright 2019 Alain Schlesser, Bright Nucleus
  */
 
-namespace BrightNucleus\AdminPage\Form;
+namespace BrightNucleus\Form\Form;
 
-use BrightNucleus\AdminPage\Control\Control;
-use BrightNucleus\AdminPage\ControlFactory;
-use BrightNucleus\AdminPage\Form;
-use BrightNucleus\AdminPage\SubmitButton;
+use BrightNucleus\Form\Control\Control;
+use BrightNucleus\Form\ControlFactory;
+use BrightNucleus\Form\Form;
+use BrightNucleus\Form\SubmitButton;
 use BrightNucleus\Config\ConfigInterface as Config;
 use BrightNucleus\Config\ConfigTrait;
 use BrightNucleus\OptionsStore\Option;
@@ -27,9 +27,9 @@ use BrightNucleus\OptionsStore\ValidationErrorCollection;
 /**
  * Class BaseForm.
  *
- * @since   0.1.2
+ * @since   0.1.0
  *
- * @package BrightNucleus\AdminPage\Form
+ * @package BrightNucleus\Form\Form
  * @author  Alain Schlesser <alain.schlesser@gmail.com>
  */
 class BaseForm implements Form {
@@ -39,7 +39,7 @@ class BaseForm implements Form {
 	/**
 	 * Options store to use for the form.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @var OptionsStore
 	 */
@@ -48,7 +48,7 @@ class BaseForm implements Form {
 	/**
 	 * Control factory instance to use.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @var ControlFactory
 	 */
@@ -57,7 +57,7 @@ class BaseForm implements Form {
 	/**
 	 * Controls to use for the form.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @var Control[]
 	 */
@@ -66,7 +66,7 @@ class BaseForm implements Form {
 	/**
 	 * Submit button to use for the form.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @var SubmitButton
 	 */
@@ -75,7 +75,7 @@ class BaseForm implements Form {
 	/**
 	 * Instantiate a Form object.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @param Config         $config          Config instance to use.
 	 * @param OptionsStore   $options         Options to use.
@@ -98,7 +98,7 @@ class BaseForm implements Form {
 	/**
 	 * Get the identifier of the form.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string Identifier of the form.
 	 */
@@ -109,7 +109,7 @@ class BaseForm implements Form {
 	/**
 	 * Get the action identifier of the button.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string Action identifier of the button.
 	 */
@@ -122,7 +122,7 @@ class BaseForm implements Form {
 	 *
 	 * This includes the hidden input fields with the nonce and the referrer.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML rendering of the button.
 	 */
@@ -143,7 +143,7 @@ class BaseForm implements Form {
 	/**
 	 * Render the controls associated with the form.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML representation of the form controls.
 	 */
@@ -166,7 +166,7 @@ class BaseForm implements Form {
 	/**
 	 * Initialize the controls for this form.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 */
 	protected function initialize_controls() {
 		$this->controls = [];
@@ -188,7 +188,7 @@ class BaseForm implements Form {
 	/**
 	 * Render the submit button.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML rendering of the submit button.
 	 */
@@ -205,7 +205,7 @@ class BaseForm implements Form {
 	/**
 	 * Initialize the submit button for this form.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 */
 	protected function initialize_submit() {
 
@@ -219,7 +219,7 @@ class BaseForm implements Form {
 	/**
 	 * Render the form closing tag(s).
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML rendering of the button.
 	 */
@@ -230,7 +230,7 @@ class BaseForm implements Form {
 	/**
 	 * Render the entire form in one go.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML rendering of the form.
 	 */
@@ -257,7 +257,7 @@ class BaseForm implements Form {
 	/**
 	 * Process a form submission.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 */
 	protected function process_submission() {
 		$updated = false;
@@ -302,7 +302,7 @@ class BaseForm implements Form {
 	 * Check whether the submission array is valid and return all validation
 	 * errors.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @param array $submission Array of submission values.
 	 *
@@ -331,7 +331,7 @@ class BaseForm implements Form {
 	/**
 	 * Check whether the current request is secure (using HTTPS).
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return bool Whether the current request is secure.
 	 */
@@ -342,7 +342,7 @@ class BaseForm implements Form {
 	/**
 	 * Get the current HTTP scheme.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string Current HTTP scheme, either 'http' or 'https'.
 	 */

@@ -1,20 +1,20 @@
 <?php declare( strict_types = 1 );
 /**
- * Bright Nucleus Admin Page.
+ * Bright Nucleus Form.
  *
- * Config-based WordPress admin pages using the Settings API.
+ * Config-based Forms.
  *
- * @package   BrightNucleus\AdminPage
+ * @package   BrightNucleus\Form
  * @author    Alain Schlesser <alain.schlesser@gmail.com>
  * @license   MIT
  * @link      https://www.brightnucleus.com/
- * @copyright 2017 Alain Schlesser, Bright Nucleus
+ * @copyright 2019 Alain Schlesser, Bright Nucleus
  */
 
-namespace BrightNucleus\AdminPage;
+namespace BrightNucleus\Form;
 
-use BrightNucleus\AdminPage\Control\Control;
-use BrightNucleus\AdminPage\Exception\FailedToCreateControl;
+use BrightNucleus\Form\Control\Control;
+use BrightNucleus\Form\Exception\FailedToCreateControl;
 use BrightNucleus\Config\ConfigTrait;
 use BrightNucleus\Config\ConfigInterface as Config;
 use BrightNucleus\Config\Config as BaseConfig;
@@ -27,9 +27,9 @@ use BrightNucleus\OptionsStore\Option;
  *
  * Create form controls that match options (or arbitrary classes).
  *
- * @since   0.1.2
+ * @since   0.1.0
  *
- * @package BrightNucleus\AdminPage
+ * @package BrightNucleus\Form
  * @author  Alain Schlesser <alain.schlesser@gmail.com>
  */
 class ControlFactory {
@@ -55,7 +55,7 @@ class ControlFactory {
 	/**
 	 * Create a new control instance for a given option.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @param Option $option Option for which to instantiate a new control.
 	 * @param array  $args   Optional. Array of arguments to pass to the

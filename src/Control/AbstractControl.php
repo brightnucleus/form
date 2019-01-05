@@ -1,26 +1,26 @@
 <?php declare( strict_types = 1 );
 /**
- * Bright Nucleus Admin Page.
+ * Bright Nucleus Form.
  *
- * Config-based WordPress admin pages using the Settings API.
+ * Config-based Forms.
  *
- * @package   BrightNucleus\AdminPage
+ * @package   BrightNucleus\Form
  * @author    Alain Schlesser <alain.schlesser@gmail.com>
  * @license   MIT
  * @link      https://www.brightnucleus.com/
- * @copyright 2017 Alain Schlesser, Bright Nucleus
+ * @copyright 2019 Alain Schlesser, Bright Nucleus
  */
 
-namespace BrightNucleus\AdminPage\Control;
+namespace BrightNucleus\Form\Control;
 
 use BrightNucleus\OptionsStore\Option;
 
 /**
  * Abstract class AbstractControl.
  *
- * @since   0.1.2
+ * @since   0.1.0
  *
- * @package BrightNucleus\AdminPage\Control
+ * @package BrightNucleus\Form\Control
  * @author  Alain Schlesser <alain.schlesser@gmail.com>
  */
 abstract class AbstractControl implements Control {
@@ -28,7 +28,7 @@ abstract class AbstractControl implements Control {
 	/**
 	 * Option to attach to the control.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @var Option
 	 */
@@ -37,7 +37,7 @@ abstract class AbstractControl implements Control {
 	/**
 	 * Label to use for the control.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @var string
 	 */
@@ -46,7 +46,7 @@ abstract class AbstractControl implements Control {
 	/**
 	 * Description to add to the control.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @var string
 	 */
@@ -57,14 +57,14 @@ abstract class AbstractControl implements Control {
 	 *
 	 * @var string
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 */
 	protected $placeholder;
 
 	/**
 	 * Instantiate an AbstractControl object.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @param Option $option      Option that the control is attached to.
 	 * @param string $label       Label to use for the control.
@@ -86,7 +86,7 @@ abstract class AbstractControl implements Control {
 	/**
 	 * Get the option attached to the control.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return Option Option attached to the control.
 	 */
@@ -97,7 +97,7 @@ abstract class AbstractControl implements Control {
 	/**
 	 * Get the label of the control.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string Label of the control.
 	 */
@@ -108,7 +108,7 @@ abstract class AbstractControl implements Control {
 	/**
 	 * Get the description of the control.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string Description of the control.
 	 */
@@ -119,7 +119,7 @@ abstract class AbstractControl implements Control {
 	/**
 	 * Render the HTML representation of the control.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @param string $template Template to render the control into. This gets
 	 *                         passed into `sprintf()` with the following
@@ -142,7 +142,7 @@ abstract class AbstractControl implements Control {
 	/**
 	 * Render the label for the control.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML representation of the control label.
 	 */
@@ -157,7 +157,7 @@ abstract class AbstractControl implements Control {
 	/**
 	 * Render the description for the control.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML representation of the control description.
 	 */
@@ -171,7 +171,7 @@ abstract class AbstractControl implements Control {
 	/**
 	 * Render the input field for the control.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML representation of the control input.
 	 */

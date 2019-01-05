@@ -1,17 +1,17 @@
 <?php
 /**
- * Bright Nucleus Admin Page.
+ * Bright Nucleus Form.
  *
- * Config-based WordPress admin pages using the Settings API.
+ * Config-based Forms.
  *
- * @package   BrightNucleus\AdminPage
+ * @package   BrightNucleus\Form
  * @author    Alain Schlesser <alain.schlesser@gmail.com>
  * @license   MIT
  * @link      https://www.brightnucleus.com/
- * @copyright 2017 Alain Schlesser, Bright Nucleus
+ * @copyright 2019 Alain Schlesser, Bright Nucleus
  */
 
-namespace BrightNucleus\AdminPage\Exception;
+namespace BrightNucleus\Form\Exception;
 
 use BrightNucleus\Exception\UnexpectedValueException;
 
@@ -21,9 +21,9 @@ use BrightNucleus\Exception\UnexpectedValueException;
  * This exception is thrown when the Config values passed to a method were
  * missing a required key.
  *
- * @since   0.1.2
+ * @since   0.1.0
  *
- * @package BrightNucleus\AdminPage\Exception
+ * @package BrightNucleus\Form\Exception
  * @author  Alain Schlesser <alain.schlesser@gmail.com>
  */
 class FailedToCreateControl extends UnexpectedValueException implements AdminPageException {
@@ -32,7 +32,7 @@ class FailedToCreateControl extends UnexpectedValueException implements AdminPag
 	 * Get an instance of a FailedToCreateControl exception for an unknown
 	 * class.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @param string $class Class for which the control could not be created.
 	 *

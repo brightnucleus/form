@@ -1,24 +1,24 @@
 <?php declare( strict_types = 1 );
 /**
- * Bright Nucleus Admin Page.
+ * Bright Nucleus Form.
  *
- * Config-based WordPress admin pages using the Settings API.
+ * Config-based Forms.
  *
- * @package   BrightNucleus\AdminPage
+ * @package   BrightNucleus\Form
  * @author    Alain Schlesser <alain.schlesser@gmail.com>
  * @license   MIT
  * @link      https://www.brightnucleus.com/
- * @copyright 2017 Alain Schlesser, Bright Nucleus
+ * @copyright 2019 Alain Schlesser, Bright Nucleus
  */
 
-namespace BrightNucleus\AdminPage;
+namespace BrightNucleus\Form;
 
 /**
  * Class SubmitButton.
  *
- * @since   0.1.2
+ * @since   0.1.0
  *
- * @package BrightNucleus\AdminPage
+ * @package BrightNucleus\Form
  * @author  Alain Schlesser <alain.schlesser@gmail.com>
  */
 class SubmitButton {
@@ -26,7 +26,7 @@ class SubmitButton {
 	/**
 	 * Instantiate a SubmitButton object.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @param string      $action Action identifier to pass to the submission
 	 *                            handler.
@@ -40,7 +40,7 @@ class SubmitButton {
 	/**
 	 * Get the action identifier of the button.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string Action identifier of the button.
 	 */
@@ -51,7 +51,7 @@ class SubmitButton {
 	/**
 	 * Get the label of the button.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string Label of the button.
 	 */
@@ -62,7 +62,7 @@ class SubmitButton {
 	/**
 	 * Render the button as an HTML element.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @param string $template Template to render the button into. This gets
 	 *                         passed into `sprintf()` with the following
@@ -83,7 +83,7 @@ class SubmitButton {
 	/**
 	 * Render the button's input field as an HTML element.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML rendering of the button input.
 	 */
@@ -97,7 +97,7 @@ class SubmitButton {
 	/**
 	 * Render the button's input field as an HTML element.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML rendering of the button input.
 	 */
@@ -111,7 +111,7 @@ class SubmitButton {
 	/**
 	 * Have the button be rendered to HTML when the object is invoked.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML rendering of the button.
 	 */

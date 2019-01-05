@@ -1,24 +1,24 @@
 <?php declare( strict_types = 1 );
 /**
- * Bright Nucleus Admin Page.
+ * Bright Nucleus Form.
  *
- * Config-based WordPress admin pages using the Settings API.
+ * Config-based Forms.
  *
- * @package   BrightNucleus\AdminPage
+ * @package   BrightNucleus\Form
  * @author    Alain Schlesser <alain.schlesser@gmail.com>
  * @license   MIT
  * @link      https://www.brightnucleus.com/
- * @copyright 2017 Alain Schlesser, Bright Nucleus
+ * @copyright 2019 Alain Schlesser, Bright Nucleus
  */
 
-namespace BrightNucleus\AdminPage;
+namespace BrightNucleus\Form;
 
 /**
  * Interface Form.
  *
- * @since   0.1.2
+ * @since   0.1.0
  *
- * @package BrightNucleus\AdminPage
+ * @package BrightNucleus\Form
  * @author  Alain Schlesser <alain.schlesser@gmail.com>
  */
 interface Form {
@@ -31,7 +31,7 @@ interface Form {
 	/**
 	 * Get the identifier of the form.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string Identifier of the form.
 	 */
@@ -40,7 +40,7 @@ interface Form {
 	/**
 	 * Get the action identifier of the button.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string Action identifier of the button.
 	 */
@@ -51,7 +51,7 @@ interface Form {
 	 *
 	 * This includes the hidden input fields with the nonce and the referrer.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML rendering of the button.
 	 */
@@ -60,7 +60,7 @@ interface Form {
 	/**
 	 * Render the controls associated with the form.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML representation of the form controls.
 	 */
@@ -69,7 +69,7 @@ interface Form {
 	/**
 	 * Render the submit button.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML rendering of the submit button.
 	 */
@@ -78,7 +78,7 @@ interface Form {
 	/**
 	 * Render the form closing tag(s).
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML rendering of the button.
 	 */
@@ -87,7 +87,7 @@ interface Form {
 	/**
 	 * Render the entire form in one go.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string HTML rendering of the form.
 	 */

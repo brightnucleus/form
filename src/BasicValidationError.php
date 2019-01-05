@@ -1,24 +1,24 @@
 <?php declare( strict_types = 1 );
 /**
- * Bright Nucleus Admin Page.
+ * Bright Nucleus Form.
  *
- * Config-based WordPress admin pages using the Settings API.
+ * Config-based Forms.
  *
- * @package   BrightNucleus\AdminPage
+ * @package   BrightNucleus\Form
  * @author    Alain Schlesser <alain.schlesser@gmail.com>
  * @license   MIT
  * @link      https://www.brightnucleus.com/
- * @copyright 2017 Alain Schlesser, Bright Nucleus
+ * @copyright 2019 Alain Schlesser, Bright Nucleus
  */
 
-namespace BrightNucleus\AdminPage;
+namespace BrightNucleus\Form;
 
 /**
  * Class BasicValidationError.
  *
- * @since   0.1.2
+ * @since   0.1.0
  *
- * @package BrightNucleus\AdminPage
+ * @package BrightNucleus\Form
  * @author  Alain Schlesser <alain.schlesser@gmail.com>
  */
 final class BasicValidationError {
@@ -26,7 +26,7 @@ final class BasicValidationError {
 	/**
 	 * Message describing the requirement.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @var string
 	 */
@@ -35,7 +35,7 @@ final class BasicValidationError {
 	/**
 	 * Message describing the requirement.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @var string
 	 */
@@ -44,7 +44,7 @@ final class BasicValidationError {
 	/**
 	 * Instantiate a BasicValidationError object.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @param string $key     Key of the option that was not valid.
 	 * @param string $message Message describing the requirement.
@@ -57,7 +57,7 @@ final class BasicValidationError {
 	/**
 	 * Get the key of the option that was not valid.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string Message describing the requirement.
 	 */
@@ -68,7 +68,7 @@ final class BasicValidationError {
 	/**
 	 * Get the message describing the requirement.
 	 *
-	 * @since 0.1.2
+	 * @since 0.1.0
 	 *
 	 * @return string Message describing the requirement.
 	 */
