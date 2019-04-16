@@ -13,6 +13,7 @@
   "require": {
     "brightnucleus/values": "^0.2.0",
     "brightnucleus/exceptions": "^0.3.0",
+    "brightnucleus/options-store": "^0.1.0",
     "brightnucleus/validation": "^0.1.0"
   },
   "autoload": {
